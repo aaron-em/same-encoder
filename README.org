@@ -1,6 +1,8 @@
 #+TITLE: same-encoder: Isomorphic SAME header and footer encoding
 
 [[https://travis-ci.org/aaron-em/same-encoder][https://api.travis-ci.org/aaron-em/same-encoder.png]]
+[[https://npmjs.com/package/same-encoder][https://img.shields.io/npm/v/same-encoder.png]]
+[[http://bower.io/search/?q%3Dsame-encoder][https://img.shields.io/bower/v/same-encoder.png]]
 
 * What?
 
