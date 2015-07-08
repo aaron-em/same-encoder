@@ -36,7 +36,7 @@ As far as code goes, there's nothing to it that isn't in [[https://github.com/aa
 
 ** Client side usage, Bower style
 
-[...]
+[[https://github.com/aaron-em/same-encoder/issues/2][issue #2]]
 
 ** Client side usage, retro style
 
@@ -143,9 +143,3 @@ Once you've made your changes and added tests to cover them, don't forget to upd
 * Et cetera
 
 In the =etc/= directory are scripts to regenerate the fixtures used by the library and by its test suite. You shouldn't have to run them any more often than the EAS protocol definition changes, and I don't think that happens too often.
-
-* Bugs/TODO
-
-** Validation and formatting
-- The =sender= value must match =/^[A-Z0-9 /]+$/=; this isn't currently checked.
-- The =sender= value could be taken as < 8 chars, and automatically space-padded to fit.
