@@ -1,0 +1,10 @@
+{
+  "laxbreak": true,
+  "laxcomma": true,
+  "loopfunc": true,
+  "eqeqeq": true,
+  "globals": {
+    "global": false,
+    "window": false
+  }
+}

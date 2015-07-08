@@ -1,0 +1,5 @@
+node_modules/
+test/reports/
+.hg/
+.hgignore
+.hgtags
