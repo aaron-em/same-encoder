@@ -36,7 +36,15 @@ As far as code goes, there's nothing to it that isn't in [[https://github.com/aa
 
 ** Client side usage, Bower style
 
-[[https://github.com/aaron-em/same-encoder/issues/2][issue #2]]
+Install the library with
+
+: bower install same-encoder
+
+and reference it in your HTML, client-side bundling/minificaton tools, etc. For example:
+
+: <script src="bower_components/same-encoder/bundle/SAME.js"></script>
+
+The client bundle exposes the same interface as the server-side package, and will work with whatever module loader you're using -- or none, in which case it'll hang itself off =window.SAME=.
 
 ** Client side usage, retro style
 
