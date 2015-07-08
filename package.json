@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "grunt test",
-    "postinstall": "cd node_modules && ln -s ../lib lib"
+    "postinstall": "sh -c '[ ! -f node_modules/lib ] && ln -s ../lib node_modules/lib'"
   },
   "repository": {
     "type": "git",
