@@ -23,7 +23,8 @@
   "ignore": [
     "Gruntfile.js",
     "etc",
-    "exammples",
+    "examples",
+    "exammples/*",
     "index.js",
     "lib",
     "node_modules",
