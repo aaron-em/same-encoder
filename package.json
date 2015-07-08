@@ -4,7 +4,7 @@
   "description": "Isomorphic encoding for Specific Area Message Encoding (Emergency Alert System) messages",
   "main": "index.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "npm install && sudo npm install -g grunt-cli && grunt test"
   },
   "keywords": [
     "EBS",
