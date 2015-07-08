@@ -1,6 +1,4 @@
-var sameEncoder = require('../index');
-var SAME = sameEncoder.SAME;     // encoder library
-var Writer = sameEncoder.Writer; // environment-specific writer (here, out to .wav)
+var SAME = require('../index');
 
 var message = {
   originator: 'PEP',
@@ -19,5 +17,5 @@ var message = {
   sender: 'WHITEHSE'
 };
 
-Writer.write(SAME.encode(message), './output.wav');
+SAME.Writer.write(SAME.Encoder.encode(message), './output.wav');
 console.log('Wrote ./output.wav.');

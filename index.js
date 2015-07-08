@@ -1,4 +1,5 @@
 module.exports = {
-  SAME: require('lib/same'),
-  Writer: require('lib/writer')
+  Encoder: require('lib/same'),
+  Writer: require('lib/writer'),
+  Values: require('lib/fixtures/same')
 };

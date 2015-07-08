@@ -1,16 +1,10 @@
 <html>
   <head>
     <title>SAME encoder client-side demo</title>
-    <!--
-        the browser bundles can be found in the repo's /bundle
-        directory; this example assumes they've been copied or symlinked
-        to js/lib/
-      -->
     <script src="js/lib/SAME.js"></script>
-    <script src="js/lib/Writer.js"></script>
     <script type="text/javascript">
-      var SAME = window.SAME;
-      var Writer = window.Writer;
+      var Encoder = window.SAME.Encoder;
+      var Writer = window.SAME.Writer;
       
       var message = {
         originator: 'PEP',
@@ -33,7 +27,7 @@
         document.querySelector('pre#obj').innerHTML =
           JSON.stringify(message, false, 2);
       
-        var player = Writer.write(SAME.encode(message), 'div#player');
+        var player = Writer.write(Encoder.encode(message), 'div#player');
 
         document.querySelector('a#wav')
           .href = player.querySelector('source').src;
