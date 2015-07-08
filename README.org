@@ -1,5 +1,7 @@
 #+TITLE: same-encoder: Isomorphic SAME header and footer encoding
 
+[[https://travis-ci.org/aaron-em/same-encoder][https://api.travis-ci.org/aaron-em/same-encoder.png]]
+
 * What?
 
 Wikipedia: "[[https://en.wikipedia.org/wiki/Specific_Area_Message_Encoding][Specific Area Message Encoding]] is the protocol used to encode the [[https://en.wikipedia.org/wiki/Emergency_Alert_System][Emergency Alert System]] (EAS) and [[https://en.wikipedia.org/wiki/NOAA_Weather_Radio_All_Hazards][NOAA Weather Radio]] (NWR) in the U.S. and [[https://en.wikipedia.org/wiki/Weatheradio_Canada][Weatheradio Canada]] in Canada."
