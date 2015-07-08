@@ -8,6 +8,8 @@ Wikipedia: "[[https://en.wikipedia.org/wiki/Specific_Area_Message_Encoding][Spec
 
 In EAS and NWR transmissions, SAME-encoded data is presented as a pair of AFSK data bursts, one a message header encoding the essentials of the alert, the other a message footer which indicates only the end of the transmission. This library encodes EAS header and footer message bursts as LPCM audio data in a RIFF WAVE container. Also provided are output modules for Node.js (emitting a .wav file) and browser environments (emitting an <audio> element).
 
+Want a taste? [[http://aaron-em.github.io/same-encoder/][Here]].
+
 * Why?
 
 EAS, and its predecessor the Emergency Broadcast System, have a small and slightly creepy place in the hearts of a lot of North Americans. Many of us remember, as small children, being frightened by the alien-sounding tones of an EBS test message as broadcast over television or radio; the deliberately unpleasant [[https://upload.wikimedia.org/wikipedia/commons/1/1d/Emergency_Alert_System_Attention_Signal_20s.ogg][attention tone]], in particular, scared the willies out of a lot of us, back when we were kids.
@@ -31,6 +33,10 @@ For more details, read on.
 ** Server side usage
 
 As far as code goes, there's nothing to it that isn't in [[https://github.com/aaron-em/same-encoder/blob/master/examples/server.js][the server-side example]]. See below for details of acceptable message formats.
+
+** Client side usage, Bower style
+
+[...]
 
 ** Client side usage, retro style
 
