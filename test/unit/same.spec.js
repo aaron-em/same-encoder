@@ -1,3 +1,5 @@
+/* jshint expr: true */
+
 var sinon = require('sinon');
 var sinonChai = require('sinon-chai');
 var chai = require('chai');
@@ -55,13 +57,13 @@ describe('SAME module', function() {
   // Reset state modified in tests, to prevent order dependence
   beforeEach(function() {
     SAMEValidatorMock.shouldPass = true;
-    
+
     Object.keys(spies).forEach(function(spyName) {
       spies[spyName].restore();
       delete spies[spyName];
     });
   });
-  
+
   describe('Constants', function() {
     it('should correctly define the preamble', function() {
       expect(SAME.constants.preamble)
@@ -89,7 +91,7 @@ describe('SAME module', function() {
         .to.deep.equal(byteArray(validConstants.preamble
                                  + '-PEP-EAN-024510+0000-1420130-WHITEHSE'));
     });
-    
+
     it('should correctly construct a footer from a null message', function() {
       expect(SAME.constructMessageByteArray(null))
         .to.deep.equal(byteArray(validConstants.preamble + 'NNNN'));
@@ -108,7 +110,7 @@ describe('SAME module', function() {
                      [ 1563, 0.00192, 4096 ],
                      [ 2083, 0.00192, 4096 ],
                      [ 1563, 0.00192, 4096 ] ];
-      
+
       expect(SAME.generateWaveData(byteArray('M')))
         .to.deep.equal(result);
     });
@@ -121,7 +123,7 @@ describe('SAME module', function() {
           SAME.encode(arg);
         };
       };
-      
+
       spies.validator = sinon.spy(SAME, 'validateMessage');
 
       expect(caller(null))
