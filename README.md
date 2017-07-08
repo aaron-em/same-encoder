@@ -1,3 +1,5 @@
+# same-encoder: Isomorphic SAME header and footer encoding
+
 <a href="https://travis-ci.org/aaron-em/same-encoder"><img src="https://api.travis-ci.org/aaron-em/same-encoder.png" /></a>
 <a href="https://npmjs.com/package/same-encoder"><img src="https://img.shields.io/npm/v/same-encoder.png" /></a>
 <a href="http://bower.io/search/?q%3Dsame-encoder"><img src="https://img.shields.io/bower/v/same-encoder.png" /></a>
