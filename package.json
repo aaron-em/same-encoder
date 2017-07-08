@@ -5,7 +5,17 @@
   "readme": "[Documentation available on Github](https://github.com/aaron-em/same-encoder/blob/master/README.org), at least until npmjs.org gets around to supporting Org-mode README files.",
   "main": "index.js",
   "scripts": {
+    "build": "grunt browserify",
+    
     "test": "grunt test",
+    "test.lint": "grunt jshint",
+    "test.cover": "grunt cover",
+    "test.validate": "grunt validate",
+
+    "demo": "grunt demo:client",
+    "demo.client": "grunt demo:client",
+    "demo.server": "grunt demo:server",
+
     "postinstall": "sh -c '[ ! -f node_modules/lib ] && ln -s ../lib node_modules/lib'"
   },
   "repository": {
@@ -29,7 +39,7 @@
     "browserify": "10.2.1",
     "chai": "3.0.0",
     "csv": "~0.4.5",
-    "deasync": "0.1.0",
+    "deasync": "0.1.10",
     "express": "4.12.4",
     "grunt": "~0.4.5",
     "grunt-mocha-istanbul": "~2.4.0",
