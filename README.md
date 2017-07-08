@@ -10,7 +10,7 @@ Wikipedia: "[Specific Area Message Encoding](https://en.wikipedia.org/wiki/Speci
 
 In EAS and NWR transmissions, SAME-encoded data is presented as a pair of AFSK data bursts, one a message header encoding the essentials of the alert, the other a message footer which indicates only the end of the transmission. This library encodes EAS header and footer message bursts as LPCM audio data in a RIFF WAVE container. Also provided are output modules for Node.js (emitting a .wav file) and browser environments (emitting an <audio> element).
 
-Want a taste? [Here](http://aaron-em.github.io/same-encoder/).
+Want a taste? [Here](https://aaron-m.com/2017/07/08/same-encoder-example).
 
 # Why?
 
