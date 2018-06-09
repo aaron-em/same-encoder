@@ -20,5 +20,4 @@ var message = {
 };
 
 SAME.Writer.write(SAME.Encoder.encode(message), './output.wav');
-console.log('THIS IS A TEST PRINT');
 console.log('Wrote ./output.wav.');
